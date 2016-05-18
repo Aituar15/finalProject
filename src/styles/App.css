@@ -1,0 +1,23 @@
+/* Base Application Styles */
+body {
+  color: #fff;
+  background: #222;
+}
+
+@media (min-width: 450px) {
+  .index {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+
+.news-content {
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+}
+
+.news-content * {
+  max-width: 430px;
+}
