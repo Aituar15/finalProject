@@ -52,15 +52,15 @@ class AppComponent extends React.Component {
       <div className="index">
 
         <AppBar
-          title="News"
-          iconElementLeft={
-            <IconButton
-              touch={true}
-              onTouchTap={actions.deselectNews.bind(this)}
-            >
-              {selectedNews.id ? <ArrowBack/> : <Dashboard/>}
-            </IconButton>
-          }
+          title="Dictionary"
+          // iconElementLeft={
+          //   <IconButton
+          //     touch={true}
+          //     onTouchTap={actions.deselectNews.bind(this)}
+          //   >
+          //     {selectedNews.id ? <ArrowBack/> : <Dashboard/>}
+          //   </IconButton>
+          // }
           iconElementRight={
             <IconButton onTouchTap={actions.fetchNews}>
             <RefreshIndicator
