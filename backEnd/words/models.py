@@ -16,5 +16,5 @@ class Word(models.Model):
     synonyms = models.ManyToManyField('self', blank=True)
     antonyms = models.ManyToManyField('self', blank=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title

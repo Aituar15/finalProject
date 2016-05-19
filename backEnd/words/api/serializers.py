@@ -16,3 +16,4 @@ class DetailedSerializer(ModelSerializer):
     class Meta:
         model = Word
         fields = ['id', 'title', 'definition', 'language', 'translation', 'synonyms', 'antonyms']
+        depth = 1

@@ -21,7 +21,7 @@ class GetByLanguage(ListAPIView):
         if self.request.method == 'GET':
             language = self.kwargs.get("language")
             queryset = Word.objects.filter(language=language)
-            return queryset
+            return sorted(queryset)
 
 
 class GetByTitle(ListAPIView):
